@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0 >
+
+        <title>Limal</title>
+
+
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="priming.css">
+
+        <!--<script type = "module" src = "test_area.js"></script> -->
+        <script type = "module" src="core.js"></script>
+    </head>
+
+    <body>
+
+        <div id="intro" class="container">
+            <div id="levelDiv">
+                <h1>LEVEL:  </h1>
+                <h1 id = "levelNum">4</h1>
+                <div id="chevronDiv">
+                    <i id="chevronUp" class='bx bx-chevron-up chevron'></i>
+                    <i id="chevronDown" class='bx bx-chevron-down chevron'></i>
+                </div>
+            </div>
+            <button id="starting">Play</button>
+        </div>
+        <div id = "game" class = "hidden container">
+            <div id = "answer">
+                <p id="modeP">
+                <p id="answerP" class="hidden"></p>
+                <input type="text" id = "answerInput" placeholder="Answer:">
+                <button type="submit" id="answerBtn">Submit</button>
+                <p id="yourAnswerP" class = "hidden">Your answer is:</p>
+                <button id="nextGameBtn" class ="hidden">Continue</button>
+            </div>
+             <canvas id="gameCanvas"></canvas>
+             <i id="closeX" class='bx  bx-x hidden'  ></i>
+        </div>
+
+
+
+    </body>
+</html>
